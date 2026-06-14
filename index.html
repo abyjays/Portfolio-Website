@@ -1,205 +1,288 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aby Alex Jays</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link rel="icon" type="image/x-icon" href="Images/logo.png">
-</head>
-<body>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="icon" type="image/x-icon" href="Images/logo.png" />
+  </head>
+
+  <body>
     <canvas id="bg-canvas"></canvas>
 
     <nav>
-        <div class="logo">AJ_</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-             <li><a href="#contact">Contact</a></li>
-        </ul>
+      <div class="logo">AJ_</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
 
     <header id="home" class="hero">
-        <div class="hero-container">
-            <div class="terminal-wrapper">
-                <div class="terminal">
-                    <div class="terminal-header">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                        <span class="title">root@kali: ~</span>
-                    </div>
-                    <div class="terminal-body">
-                        <p><span class="user">aby@kali</span>:<span class="path">~</span>$ sudo su</p>
-                        <p>[sudo] password for aby: </p>
-                        <p><span class="root">root@kali</span>:<span class="path">~</span># <span class="cursor">_</span></p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="hero-content">
-                <h1>ABY ALEX JAYS</h1>
-                <h2>UNCOVERING DIGITAL TRUTH.<br>ADVANCING CYBERSECURITY.</h2>
-                <p>B.Sc Cyber Forensics Student focusing on pentesting, building custom tools with Python and Bash.</p>
-                
-                <div class="social-proof">
-                    Professional Details on: 
-                    <a href="https://www.linkedin.com/in/aby-alex-jays" target="_blank" class="clean-link">LinkedIn</a>, 
-                    <a href="https://github.com/abyjays" target="_blank" class="clean-link">GitHub</a>, 
-                    <a href="mailto:abyjays06@gmail.com" class="clean-link">Email</a>
-                </div>
-
-                <div class="cta-buttons">
-                    <a href="#projects" class="btn primary">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="3" y="3" width="7" height="7"></rect>
-                            <rect x="14" y="3" width="7" height="7"></rect>
-                            <rect x="14" y="14" width="7" height="7"></rect>
-                            <rect x="3" y="14" width="7" height="7"></rect>
-                        </svg>
-                        VIEW PORTFOLIO
-                    </a>
-                    
-                    <a href="#contact" class="btn secondary">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="22" y1="2" x2="11" y2="13"></line>
-                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-                        </svg>
-                        GET IN TOUCH
-                    </a>
-                    
-                    <a href="resume.pdf" target="_blank" class="btn third">
-                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                            <polyline points="14 2 14 8 20 8"></polyline>
-                            <line x1="16" y1="13" x2="8" y2="13"></line>
-                            <line x1="16" y1="17" x2="8" y2="17"></line>
-                            <polyline points="10 9 9 9 8 9"></polyline>
-                        </svg>
-                        RESUME
-                    </a>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section id="education" class="content-section reveal">
-        <h3 class="section-title">EDUCATION & ACADEMIC BACKGROUND</h3>
-        <div class="card">
-            <h4>B.Sc in Cyber Forensics (2024–2028)</h4>
-            <p>Kristu Jyoti College of Management and Technology, Chethipuzha</p>
-            <br>
-            <h4>Previous Education</h4>
-            <p>Marthoma Vocational Higher Secondary School & Bethany Ashram High School</p>
-        </div>
-    </section>
-
-    <section id="skills" class="content-section reveal">
-        <h3 class="section-title">TECHNICAL SKILLS & EXPERTISE</h3>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h4>Cyber Forensics & Security</h4>
-                <div class="tags">
-                    <span>nmap</span>
-                    <span>Kali Linux Admin</span>
-                </div>
-            </div>
-            <div class="skill-category">
-                <h4>Web Development & Scripting</h4>
-                <div class="tags">
-                    <span>React.js (Hooks, State)</span>
-                    <span>JavaScript (ES6+)</span>
-                    <span>HTML/CSS</span>
-                    <span>Python</span>
-                    <span>Bash Scripting</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="projects" class="content-section reveal">
-        <h3 class="section-title">FEATURED PROJECTS</h3>
-        <div class="projects-grid">
-            
-            <div class="card project-card">
-                <div class="project-content">
-                    <h4>AstroBio-Explorer</h4>
-                    <p>A web-based application built with HTML, CSS, and JavaScript that utilizes a NASA database for extensive data exploration.</p>
-                </div>
-                <div class="project-overlay">
-                    <a href="https://github.com/abyjays/AstroBio-Explorer" target="_blank" class="btn primary small-btn">GitHub</a>
-                    <a href="https://abyjays.github.io/AstroBio-Explorer/" target="_blank" class="btn secondary small-btn">Go to Site</a>
-                </div>
-            </div>
-
-            <div class="card project-card">
-                <div class="project-content">
-                    <h4>Fire Store</h4>
-                    <p>A comprehensive online shopping web application engineered utilizing the React framework for a responsive front-end experience.</p>
-                </div>
-                <div class="project-overlay">
-                    <a href="https://github.com/abyjays/Fire_Store" target="_blank" class="btn primary small-btn">GitHub</a>
-                    <a href="https://fire-store-two.vercel.app/" target="_blank" class="btn secondary small-btn">Go to Site</a>
-                </div>
-            </div>
-
-            <div class="card project-card">
-                <div class="project-content">
-                    <h4>CipherCheck</h4>
-                    <p>🔐 Verify file integrity instantly. An interactive Python CLI tool supporting MD5, SHA-1, SHA-256,SHA-384 and SHA-512.</p>
-                </div>
-                <div class="project-overlay">
-                    <a href="https://github.com/abyjays/CipherCheck" target="_blank" class="btn primary small-btn">GitHub</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="contact" class="content-section reveal">
-        <h3 class="section-title">ESTABLISH CONNECTION</h3>
-        
-        <div class="terminal-contact-card">
+      <div class="hero-container">
+        <div class="terminal-wrapper">
+          <div class="terminal">
             <div class="terminal-header">
+              <div class="terminal-dots">
                 <span class="dot red"></span>
                 <span class="dot yellow"></span>
                 <span class="dot green"></span>
-                <span class="title">root@abyjays: ~</span>
+              </div>
+              <span class="title">root@kali: ~</span>
             </div>
             <div class="terminal-body">
-                <p><span class="path">root@abyjays</span>:~# ./initiate_contact.sh</p>
-                <p class="sys-output">[*] Target identified: Aby Alex Jays</p>
-                <p class="sys-output">[*] Status: Exploring new opportunities.</p>
-                <br>
-                <p><span class="path">root@abyjays</span>:~# select_protocol --list</p>
-                
-                <div class="contact-protocols">
-                    <a href="mailto:abyjays06@gmail.com" class="protocol-link">
-                        <span class="protocol-name">[ EMAIL ]</span> 
-                        <span class="protocol-desc">abyjays06@gmail.com</span>
-                    </a>
-                    <a href="https://linkedin.com/in/aby-alex-jays" target="_blank" class="protocol-link">
-                        <span class="protocol-name">[ LINKEDIN ]</span> 
-                        <span class="protocol-desc">/in/aby-alex-jays</span>
-                    </a>
-                    <a href="https://github.com/abyjays" target="_blank" class="protocol-link">
-                        <span class="protocol-name">[ GITHUB ]</span> 
-                        <span class="protocol-desc">github.com/abyjays</span>
-                    </a>
-                </div>
-                <br>
-                <p><span class="path">root@abyjays</span>:~# <span class="cursor">_</span></p>
+              <p>
+                <span class="user">aby@kali</span>:<span class="path">~</span>$
+                sudo su
+              </p>
+              <p>[sudo] password for aby:</p>
+              <p>
+                <span class="root">root@kali</span>:<span class="path">~</span>#
+                <span class="cursor">_</span>
+              </p>
             </div>
+          </div>
         </div>
+
+        <div class="hero-content">
+          <h1>ABY ALEX JAYS</h1>
+          <h2>UNCOVERING DIGITAL TRUTH.<br />ADVANCING CYBERSECURITY.</h2>
+          <p>
+            B.Sc Cyber Forensics Student focusing on pentesting, building custom
+            tools with Python and Bash.
+          </p>
+
+          <div class="social-proof">
+            Professional Details on:
+            <a href="https://www.linkedin.com/in/aby-alex-jays" target="_blank" class="clean-link">LinkedIn</a>,
+            <a href="https://github.com/abyjays" target="_blank" class="clean-link">GitHub</a>,
+            <a href="mailto:abyjays06@gmail.com" class="clean-link">Email</a>
+          </div>
+
+          <div class="cta-buttons">
+            <a href="#projects" class="btn primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+              VIEW PORTFOLIO
+            </a>
+
+            <a href="#contact" class="btn secondary">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+              GET IN TOUCH
+            </a>
+
+            <a href="resume.pdf" target="_blank" class="btn third">
+              <svg
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                ></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+              RESUME
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="education" class="content-section reveal">
+      <h3 class="section-title">EDUCATION & ACADEMIC BACKGROUND</h3>
+      <div class="card">
+        <h4>B.Sc in Cyber Forensics (2024–2028)</h4>
+        <p>Kristu Jyoti College of Management and Technology, Chethipuzha</p>
+        <br />
+        <h4>Previous Education</h4>
+        <p>
+          Marthoma Vocational Higher Secondary School & Bethany Ashram High
+          School
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="content-section reveal">
+      <h3 class="section-title">TECHNICAL SKILLS & EXPERTISE</h3>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h4>Cyber Forensics & Security</h4>
+          <div class="tags">
+            <span>nmap</span>
+            <span>Kali Linux Admin</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h4>Web Development & Scripting</h4>
+          <div class="tags">
+            <span>React.js (Hooks, State)</span>
+            <span>JavaScript (ES6+)</span>
+            <span>HTML/CSS</span>
+            <span>Python</span>
+            <span>Bash Scripting</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="content-section reveal">
+      <h3 class="section-title">FEATURED PROJECTS</h3>
+      <div class="projects-grid">
+        <div class="card project-card">
+          <div class="project-content">
+            <h4>AstroBio-Explorer</h4>
+            <p>
+              A web-based application built with HTML, CSS, and JavaScript that
+              utilizes a NASA database for extensive data exploration.
+            </p>
+          </div>
+          <div class="project-overlay">
+            <a
+              href="https://github.com/abyjays/AstroBio-Explorer"
+              target="_blank"
+              class="btn primary small-btn"
+              >GitHub</a
+            >
+            <a
+              href="https://abyjays.github.io/AstroBio-Explorer/"
+              target="_blank"
+              class="btn secondary small-btn"
+              >Go to Site</a
+            >
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-content">
+            <h4>Fire Store</h4>
+            <p>
+              A comprehensive online shopping web application engineered
+              utilizing the React framework for a responsive front-end
+              experience.
+            </p>
+          </div>
+          <div class="project-overlay">
+            <a
+              href="https://github.com/abyjays/Fire_Store"
+              target="_blank"
+              class="btn primary small-btn"
+              >GitHub</a
+            >
+            <a
+              href="https://fire-store-two.vercel.app/"
+              target="_blank"
+              class="btn secondary small-btn"
+              >Go to Site</a
+            >
+          </div>
+        </div>
+
+        <div class="card project-card">
+          <div class="project-content">
+            <h4>CipherCheck</h4>
+            <p>
+              🔐 Verify file integrity instantly. An interactive Python CLI tool
+              supporting MD5, SHA-1, SHA-256,SHA-384 and SHA-512.
+            </p>
+          </div>
+          <div class="project-overlay">
+            <a
+              href="https://github.com/abyjays/CipherCheck"
+              target="_blank"
+              class="btn primary small-btn"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="content-section reveal">
+      <h3 class="section-title">ESTABLISH CONNECTION</h3>
+
+      <div class="terminal-contact-card">
+        <div class="terminal-header">
+          <div class="terminal-dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+          </div>
+          <span class="title">root@abyjays: ~</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="path">root@abyjays</span>:~# ./initiate_contact.sh</p>
+          <p class="sys-output">[*] Target identified: Aby Alex Jays</p>
+          <p class="sys-output">[*] Status: Exploring new opportunities.</p>
+          <br />
+          <p>
+            <span class="path">root@abyjays</span>:~# select_protocol --list
+          </p>
+
+          <div class="contact-protocols">
+            <a href="mailto:abyjays06@gmail.com" class="protocol-link">
+              <span class="protocol-name">[ EMAIL ]</span>
+              <span class="protocol-desc">abyjays06@gmail.com</span>
+            </a>
+            <a
+              href="https://linkedin.com/in/aby-alex-jays"
+              target="_blank"
+              class="protocol-link"
+            >
+              <span class="protocol-name">[ LINKEDIN ]</span>
+              <span class="protocol-desc">/in/aby-alex-jays</span>
+            </a>
+            <a
+              href="https://github.com/abyjays"
+              target="_blank"
+              class="protocol-link"
+            >
+              <span class="protocol-name">[ GITHUB ]</span>
+              <span class="protocol-desc">github.com/abyjays</span>
+            </a>
+          </div>
+          <br />
+          <p>
+            <span class="path">root@abyjays</span>:~#
+            <span class="cursor">_</span>
+          </p>
+        </div>
+      </div>
     </section>
 
     <footer class="site-footer">
-        <p>© 2026 Aby Alex Jays | Built for Security & Performance.</p>
+      <p>© 2026 Aby Alex Jays | Built for Security & Performance.</p>
     </footer>
 
     <script src="JS/index.js"></script>
     <script src="JS/animation.js"></script>
-</body>
+  </body>
 </html>
