@@ -518,7 +518,7 @@ a:hover,
   }
   .project-overlay {
     flex-direction: column;
-    padding: 20px 10em; 
+    padding: 20px 7em; 
     gap: 10px;
   }
 }
