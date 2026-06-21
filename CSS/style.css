@@ -16,6 +16,10 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: radial-gradient(
     circle at top left,
@@ -61,6 +65,7 @@ nav {
     var(--accent-primary),
     var(--accent-secondary)
   );
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -124,7 +129,7 @@ a:hover,
   padding: 12px 15px;
   display: flex;
   align-items: center;
-  position: relative; /* Essential for perfectly centering the title */
+  position: relative; 
   border-bottom: 1px solid #2a1b3d;
 }
 
@@ -313,6 +318,64 @@ a:hover,
   color: var(--accent-secondary);
 }
 
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.cert-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none; 
+  color: inherit;
+  cursor: pointer;
+}
+
+.cert-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.icon-wrapper {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.cert-icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.03);
+  padding: 4px;
+}
+
+.cert-header h4 {
+  color: #fff;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.cert-card:hover .cert-header h4 {
+  color: var(--accent-secondary);
+}
+
+.cert-issuer {
+  color: var(--accent-secondary);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.95rem;
+  margin-left: 47px;
+}
+
+
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -408,7 +471,7 @@ a:hover,
   border-left: 2px solid transparent;
   background: rgba(255, 255, 255, 0.02);
   border-radius: 0 4px 4px 0;
-  word-break: break-word; /* Switched to break-word for better readability */
+  word-break: break-word; 
 }
 
 .protocol-name {
@@ -433,11 +496,89 @@ a:hover,
 }
 
 .site-footer {
-  text-align: center;
-  padding: 40px;
-  background: transparent;
+  position: relative;
+  padding: 25px 5%;
+  background: rgba(10, 5, 20, 0.95);
+  margin-top: 50px;
+}
+
+.footer-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--accent-primary), var(--accent-secondary), transparent);
+  box-shadow: 0 0 10px var(--accent-primary);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 0.85rem;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: "Courier New", Courier, monospace;
+  color: var(--accent-secondary);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #27c93f;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #27c93f;
+  animation: pulse-dot 2s infinite;
+}
+
+@keyframes pulse-dot {
+  0% { opacity: 0.4; box-shadow: 0 0 4px #27c93f; }
+  50% { opacity: 1; box-shadow: 0 0 12px #27c93f; }
+  100% { opacity: 0.4; box-shadow: 0 0 4px #27c93f; }
+}
+
+.footer-center {
   color: var(--text-muted);
-  font-size: 0.9rem;
+  text-align: center;
+  padding-left: 10em;
+  flex: 1;
+}
+
+.footer-right .visitor-tracker {
+  font-family: "Courier New", Courier, monospace;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  margin: 0; 
+}
+
+.glow-text {
+  color: var(--accent-secondary);
+  font-weight: bold;
+  text-shadow: 0 0 8px rgba(0, 240, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .footer-center {
+    padding: 0;
+  }
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  .footer-left {
+    justify-content: center;
+  }
 }
 
 .reveal {
@@ -467,7 +608,8 @@ a:hover,
   }
 
   .skills-grid,
-  .projects-grid {
+  .projects-grid,
+  .cert-grid {
     grid-template-columns: 1fr;
   }
   .content-section {
@@ -521,4 +663,19 @@ a:hover,
     padding: 20px 3em; 
     gap: 10px;
   }
+}
+
+.visitor-tracker {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+.glow-text {
+  color: var(--accent-secondary);
+  font-weight: bold;
+  text-shadow: 0 0 8px rgba(0, 240, 255, 0.5);
+  transition: all 0.3s ease;
 }
