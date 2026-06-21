@@ -114,45 +114,6 @@ function animate() {
     requestAnimationFrame(animate);
 }
 animate();
-
-// --- Live Visitor Counter (Session Aware & Localhost Safe) ---
-function fetchVisitorCount() {
-    const countElement = document.getElementById('visitor-count');
-    if (!countElement) return; 
-
-    // 1. Local Development Bypass
-    if (window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost') {
-        countElement.innerText = "42"; // Removed the leading zeros here
-        console.log("[System] Local environment detected. API connection bypassed.");
-        return;
-    }
-
-    // 2. Production API Connection
-    const hasVisited = sessionStorage.getItem('hasVisited_portfolio');
-    
-    const apiEndpoint = hasVisited 
-        ? 'https://api.counterapi.dev/v1/abyjays/portfolio'      
-        : 'https://api.counterapi.dev/v1/abyjays/portfolio/up';  
-
-    fetch(apiEndpoint)
-        .then(response => {
-            if (!response.ok) throw new Error("API connection failed.");
-            return response.json();
-        })
-        .then(data => {
-            // Removed .padStart(4, '0') to display the raw number
-            countElement.innerText = data.count.toString();
-            
-            if (!hasVisited) sessionStorage.setItem('hasVisited_portfolio', 'true');
-        })
-        .catch(error => {
-            console.error('[Error] Visitor tracker failed:', error);
-            countElement.innerText = "ERR";
-        });
-}
-
-fetchVisitorCount();
-
 function noresumepopup() {
     alert("Sorry, the resume download feature is currently unavailable. Please check back later or contact me directly for a copy of my resume. Thank you for your understanding!");
 }
